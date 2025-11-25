@@ -44,7 +44,15 @@ class PreloadScene extends Phaser.Scene {
         });
 
         // 램프만 로드 (체크포인트용)
-        this.load.image('lamp', 'assets/decorations/lamp.png');
+        this.load.image('1', 'assets/decorations/1.png');
+        this.load.image('2', 'assets/decorations/2.png');
+        this.load.image('3', 'assets/decorations/3.png');
+        this.load.image('4', 'assets/decorations/4.png');
+        this.load.image('5', 'assets/decorations/5.png');
+        this.load.image('6', 'assets/decorations/6.png');
+        this.load.image('7', 'assets/decorations/7.png');
+
+
     }
 
     create() {
@@ -280,10 +288,11 @@ class GameScene extends Phaser.Scene {
 
         RESUME_DATA.checkpoints.forEach((checkpoint, index) => {
             // 램프 이미지로 체크포인트 생성 (바닥에 붙임)
+
             const lamp = this.add.image(
                 checkpoint.worldX,
                 groundY,
-                'lamp'
+                index + 1
             );
             lamp.setScale(1.2);
             lamp.setOrigin(0.5, 1);
