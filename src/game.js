@@ -401,6 +401,18 @@ class GameScene extends Phaser.Scene {
     }
 
     update() {
+        // 스페이스바: 패널이 열려있으면 닫고, 아니면 점프
+        if (Phaser.Input.Keyboard.JustDown(this.keys.space)) {
+            const panel = document.getElementById('resume-panel');
+            if (!panel.classList.contains('hidden')) {
+                // 패널이 열려있으면 닫기
+                this.closePanel();
+            } else if (this.player.body.touching.down) {
+                // 패널이 닫혀있고 바닥에 있으면 점프
+                this.player.setVelocityY(-400);
+                this.player.play('jump', true);
+            }
+        }
 
         if (!this.gameStarted || this.isPaused) return;
 
@@ -427,11 +439,6 @@ class GameScene extends Phaser.Scene {
             }
         }
 
-        // 점프
-        if (this.keys.space.isDown && this.player.body.touching.down) {
-            this.player.setVelocityY(-400);
-            this.player.play('jump', true);
-        }
 
         // UI 업데이트
         this.updateUI();
