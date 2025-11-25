@@ -4,13 +4,13 @@
 export const RESUME_DATA = {
     // 기본 정보
     profile: {
-        name: "김세중(Beni Kim)",
-        title: "개발자",
+        name: "Beni Kim(김세중)",
+        title: "Tech Lead / Senior Full-Stack Developer",
         careerYears: 20,
         email: "sejoung@gmail.com",
         github: "github.com/sejoung",
         linkedin: "linkedin.com/in/sanaes",
-        skills: ["JavaScript", "Java", "Kotlin", "Python", "AWS", "Docker", "Vue.js"]
+        skills: ["JavaScript", "Java", "Kotlin", "Python", "AWS", "Docker", "GenAI"]
     },
 
     // 체크포인트 - 게임에서 특정 위치에 도달했을 때 표시될 정보
@@ -26,150 +26,125 @@ export const RESUME_DATA = {
         {
             worldX: 1200,
             type: "experience",
-            icon: "💼",
-            title: "주니어 개발자 시절",
+            icon: "🧪",
+            title: "기술 스택 전환의 시작",
             content: `
-                <h3>주니어 개발자 (2019.03 - 2020.12)</h3>
-                <p class="date">ABC 스타트업</p>
-                <ul>
-                    <li>웹 애플리케이션 프론트엔드 개발</li>
-                    <li>React를 활용한 SPA 구축</li>
-                    <li>RESTful API 연동 및 상태 관리</li>
-                    <li>반응형 웹 디자인 구현</li>
-                </ul>
-                <h3>주요 성과</h3>
-                <ul>
-                    <li>사용자 대시보드 개발로 업무 효율 30% 향상</li>
-                    <li>페이지 로딩 속도 50% 개선</li>
-                </ul>
-            `
+                    <h3>Stable Diffusion WebUI → ComfyUI 전환</h3>
+                    <p class="date">초기 탐색 단계</p>
+                    <ul>
+                        <li>Stable Diffusion Web UI 기반의 실험 환경 구축</li>
+                        <li>프로덕션에 적합한 ComfyUI로 기술 스택 전환</li>
+                        <li>작가 지원용 AI 파이프라인을 위한 구조 재정비</li>
+                        <li>유연하고 모듈화된 워크플로우 확보</li>
+                    </ul>
+                    <h3>전환의 의미</h3>
+                    <ul>
+                        <li>테크팀 성장의 첫 전환점 형성</li>
+                        <li>프로덕션 품질을 위한 준비 단계 완성</li>
+                    </ul>
+                `
         },
         {
             worldX: 2000,
             type: "experience",
-            icon: "🚀",
-            title: "중급 개발자로 성장",
+            icon: "🤖",
+            title: "수백 개 모델 학습",
             content: `
-                <h3>미들 개발자 (2021.01 - 2022.06)</h3>
-                <p class="date">XYZ 테크</p>
+                <h3>작가 맞춤형 AI 모델 개발</h3>
+                <p class="date">프로덕션 최적화를 위한 집중 학습 단계</p>
                 <ul>
-                    <li>팀 리딩 및 코드 리뷰</li>
-                    <li>마이크로서비스 아키텍처 설계 참여</li>
-                    <li>CI/CD 파이프라인 구축</li>
-                    <li>신입 개발자 멘토링</li>
+                    <li>작가 개별 스타일에 맞춘 대규모 파인튜닝</li>
+                    <li>수백 개 이상의 모델 실험 및 반복 학습</li>
+                    <li>최종 결과물 품질 극대화를 위한 데이터 설계</li>
+                    <li>사내 표준 모델/실험 프로세스 구축</li>
                 </ul>
-                <h3>주요 프로젝트</h3>
+                <h3>주요 성과</h3>
                 <ul>
-                    <li>전자상거래 플랫폼 리뉴얼 (React, Node.js)</li>
-                    <li>실시간 채팅 시스템 구축 (WebSocket)</li>
-                    <li>관리자 대시보드 개발 (Vue.js)</li>
+                    <li>현재 서비스 품질의 기반 확립</li>
+                    <li>재현 가능한 고품질 이미지 생성 파이프라인 완성</li>
                 </ul>
             `
         },
         {
             worldX: 2800,
             type: "experience",
-            icon: "⭐",
-            title: "시니어 개발자",
+            icon: "🏁",
+            title: "딥테크 TIPS 도전",
             content: `
-                <h3>시니어 개발자 (2022.07 - 현재)</h3>
-                <p class="date">DEF Corporation</p>
+               <h3>TIPS R&D 자금 확보 시도</h3>
+                <p class="date">초기 R&D 강화 단계</p>
                 <ul>
-                    <li>기술 스택 선정 및 아키텍처 설계</li>
-                    <li>풀스택 개발 (프론트엔드 + 백엔드)</li>
-                    <li>성능 최적화 및 보안 강화</li>
-                    <li>애자일 방법론 도입 및 팀 프로세스 개선</li>
+                    <li>사내 기술 고도화를 위한 DeepTech TIPS 지원</li>
+                    <li>기술성/혁신성 중심의 상세 과제 제출</li>
+                    <li>심사 과정에서 '보류' 판정</li>
                 </ul>
-                <h3>주요 성과</h3>
+                <h3>의미와 배움</h3>
                 <ul>
-                    <li>서비스 응답 속도 70% 개선</li>
-                    <li>월간 활성 사용자 200% 증가</li>
-                    <li>AWS 비용 40% 절감</li>
+                    <li>첫 공식적인 R&D 평가 경험 축적</li>
+                    <li>프로덕션과 연구 관점의 부족한 지점 재정비</li>
                 </ul>
             `
         },
         {
             worldX: 3600,
-            type: "skills",
-            icon: "🛠️",
-            title: "기술 스택",
+            type: "experience",
+            icon: "🔍",
+            title: "AWS와의 운명적 만남",
             content: `
-                <h3>프론트엔드</h3>
-                <ul>
-                    <li>JavaScript (ES6+), TypeScript</li>
-                    <li>React, Vue.js, Next.js</li>
-                    <li>HTML5, CSS3, SASS, Tailwind CSS</li>
-                    <li>Webpack, Vite, Redux, Zustand</li>
-                </ul>
-                <h3>백엔드</h3>
-                <ul>
-                    <li>Node.js, Express, NestJS</li>
-                    <li>Python, Django, FastAPI</li>
-                    <li>RESTful API, GraphQL</li>
-                    <li>PostgreSQL, MongoDB, Redis</li>
-                </ul>
-                <h3>DevOps & Tools</h3>
-                <ul>
-                    <li>AWS (EC2, S3, Lambda, RDS, CloudFront)</li>
-                    <li>Docker, Kubernetes</li>
-                    <li>Git, GitHub Actions, Jenkins</li>
-                    <li>Nginx, Linux, VS Code</li>
-                </ul>
+                    <h3>뜻밖의 기회 발견</h3>
+                    <p class="date">Thomas의 AWS 행사 참여</p>
+                    <ul>
+                        <li>DeepTech TIPS 보류 이후 새로운 기회를 탐색</li>
+                        <li>AWS 행사에서 Generative AI Accelerator 정보 파악</li>
+                        <li>글로벌 프로그램의 잠재력 확인</li>
+                    </ul>
+                    <h3>전환점</h3>
+                    <ul>
+                        <li>국내 중심에서 글로벌 중심으로 시야 확장</li>
+                        <li>팀 내부에 새로운 도전 의지 발생</li>
+                    </ul>
             `
         },
         {
             worldX: 4400,
-            type: "education",
-            icon: "🎓",
-            title: "교육 & 자격증",
+            type: "experience",
+            icon: "🚀",
+            title: "AWS Generative AI Accelerator 선정",
             content: `
-                <h3>학력</h3>
-                <ul>
-                    <li>OO대학교 컴퓨터공학과 졸업 (2015 - 2019)</li>
-                    <li>학점: 4.0 / 4.5</li>
-                    <li>우수 졸업생 표彰</li>
-                </ul>
-                <h3>자격증</h3>
-                <ul>
-                    <li>AWS Certified Solutions Architect - Associate</li>
-                    <li>정보처리기사</li>
-                    <li>SQLD (SQL Developer)</li>
-                </ul>
-                <h3>교육 & 수료</h3>
-                <ul>
-                    <li>풀스택 개발 부트캠프 수료 (2018)</li>
-                    <li>알고리즘 고급 과정 수료</li>
-                    <li>클라우드 아키텍처 전문가 과정</li>
-                </ul>
+                    <h3>글로벌 80팀 중 당당히 선발</h3>
+                    <p class="date">AWS 글로벌 프로그램 참여</p>
+                    <ul>
+                        <li>치열한 심사 경쟁을 뚫고 최종 선정</li>
+                        <li>프로덕션 기술력·비전·실행력을 글로벌에서 인정</li>
+                        <li>전 세계 AI 기업들과 협업·멘토링 기회 확보</li>
+                    </ul>
+                    <h3>직접 경험한 글로벌 무대</h3>
+                    <ul>
+                        <li>샌프란시스코, 시애틀, 라스베이거스, LA 방문</li>
+                        <li>글로벌 테크 기업·VC·파트너와의 교류</li>
+                    </ul>
             `
         },
         {
             worldX: 5200,
-            type: "projects",
-            icon: "🎨",
-            title: "사이드 프로젝트",
+            type: "experience",
+            icon: "🏗️",
+            title: "REALDRAW 테크팀의 현재",
             content: `
-                <h3>개발자 커뮤니티 플랫폼</h3>
-                <p class="date">2023.01 - 2023.06</p>
-                <ul>
-                    <li>기술 스택: React, Node.js, PostgreSQL, AWS</li>
-                    <li>실시간 코드 공유 및 협업 기능</li>
-                    <li>1,000+ 활성 사용자 확보</li>
-                    <li>GitHub Stars: 500+</li>
-                </ul>
-                <h3>AI 기반 이력서 분석 도구</h3>
-                <p class="date">2023.07 - 2023.12</p>
-                <ul>
-                    <li>기술 스택: Python, FastAPI, OpenAI API, React</li>
-                    <li>이력서 자동 분석 및 피드백 제공</li>
-                    <li>500+ 다운로드</li>
-                </ul>
-                <h3>오픈소스 기여</h3>
-                <ul>
-                    <li>React 공식 문서 한글 번역 참여</li>
-                    <li>인기 UI 라이브러리 버그 수정 및 기능 추가</li>
-                    <li>개발자 도구 오픈소스 프로젝트 메인테이너</li>
-                </ul>
+                    <h3>작가 중심 AI 프로세스 정착</h3>
+                    <p class="date">수많은 시행착오의 결과</p>
+                    <ul>
+                        <li>작가/작품 맞춤형 AI 생성 파이프라인 구축</li>
+                        <li>수백 건의 파인튜닝 실험을 통한 품질 보증 체계화</li>
+                        <li>데이터 설계 → 모델 학습 → 검수 → 릴리즈 프로세스 확립</li>
+                    </ul>
+
+                    <h3>문화적 성장</h3>
+                    <ul>
+                        <li>적극적 코드 리뷰 문화 정착</li>
+                        <li>직군 간 장애물 없이 협업하는 구조 형성</li>
+                        <li>'계몽이 아닌 전염'을 지향하는 주도적 학습</li>
+                    </ul>
             `
         }
     ]
@@ -185,5 +160,5 @@ RESUME_DATA.checkpoints[0].content = `
     <p>💻 ${RESUME_DATA.profile.github}</p>
     <p>🔗 ${RESUME_DATA.profile.linkedin}</p>
     <br>
-    <p>게임을 진행하며 저의 이력을 탐험해보세요! 🎮</p>
+    <p>게임을 진행하며 저와 지금까지의 리얼드로우에서 이력을 탐험해보세요! 🎮</p>
 `;

@@ -50,9 +50,9 @@ class PreloadScene extends Phaser.Scene {
     create() {
         // 캐릭터 애니메이션 생성
         this.createAnimations();
-
         // 게임 씬으로 이동
         this.scene.start('GameScene');
+
     }
 
     createAnimations() {
@@ -117,6 +117,7 @@ class GameScene extends Phaser.Scene {
         this.gameStarted = false;
         this.isPaused = false;
         this.checkpointsReached = new Set();
+        this.lastTriggerTime = 0;
     }
 
     create() {
@@ -323,16 +324,13 @@ class GameScene extends Phaser.Scene {
 
     handleCheckpoint(player, checkpoint) {
         const currentTime = Date.now();
-        const lastTriggerTime = checkpoint.getData('lastTriggerTime') || 0;
+        const lastTriggerTime = this.lastTriggerTime;
         const cooldownTime = 3000; // 3초 쿨다운
 
         // 3초 쿨다운 체크
         if (currentTime - lastTriggerTime < cooldownTime) {
             return; // 쿨다운 중이면 무시
         }
-
-        // 마지막 트리거 시간 업데이트
-        checkpoint.setData('lastTriggerTime', currentTime);
 
         // 첫 방문인지 확인
         if (!checkpoint.getData('reached')) {
@@ -369,6 +367,7 @@ class GameScene extends Phaser.Scene {
         const panel = document.getElementById('resume-panel');
         panel.classList.add('hidden');
         this.isPaused = false;
+        this.lastTriggerTime = Date.now();
         this.physics.resume();
     }
 
@@ -393,6 +392,7 @@ class GameScene extends Phaser.Scene {
     }
 
     update() {
+
         if (!this.gameStarted || this.isPaused) return;
 
         // 플레이어 이동
@@ -404,12 +404,6 @@ class GameScene extends Phaser.Scene {
                 this.player.play('run', true);
             }
         } else if (this.cursors.right.isDown || this.keys.d.isDown) {
-            // 앞으로 가기 버튼 누르면 패널 닫기
-            const panel = document.getElementById('resume-panel');
-            if (!panel.classList.contains('hidden')) {
-                this.closePanel();
-            }
-
             this.player.setVelocityX(200);
             this.player.setFlipX(false);
 
